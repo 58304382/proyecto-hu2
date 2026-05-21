@@ -49,7 +49,7 @@ using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
-    context.Database.Migrate();
+    //context.Database.Migrate();
 
     if (!context.Usuarios.Any())
     {
